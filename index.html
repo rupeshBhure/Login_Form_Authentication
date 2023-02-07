@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TRIOZ Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">TRIOZ</h2>
+            </div>
+            
+    <div class="section">
+        <div class="left">
+            <img src="https://media.giphy.com/media/N3NGMfgLLviTymncX1/giphy.gif" alt="" srcset="">
+        </div>
+        <div class="content">
+            <h1>Web Design & Development Course</h1>
+        </div>
+        <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="Log_in.html" name="form" onsubmit="return validated()">
+                <div class="font"><i class="fa-solid fa-user"></i> Username</div>
+                <input autocomplete="off" type="text" name="email" placeholder="Enter your username here">
+                <div id="email_error">Username can't be blank</div>
+                <div id="phone_error">Username must be of 5 digits and above</div>
+                <div class="font font2"><i class="fa-solid fa-lock"></i> Password</div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Enter your password here">
+
+                </div>
+                <div id="pass_error">Please fill up your Password</div>
+                <div id="pass_size">Password must be greater than 6 digits</div>
+                <button type="submit">Login</button>
+            </form>
+            <span class="material-symbols-outlined" id="icon">forgotten password?</span>
+            <div class="iconClick">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+
+</body>
+
+</html>
